@@ -1,0 +1,238 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+.bookcover {
+	width: 500px;
+	height: 500px;
+	background: purple;
+	position: relative;
+	overflow: hidden;
+}
+
+.title {
+	color: black;
+	position: absolute;
+	left: 50%;
+	top: 15px;
+	transform: translateX(-50%);
+	font-size: 30px
+}
+
+@keyframes move {
+	0%,100% { left: 50%; }
+	25% { left: 45%; }
+	75% { left: 55%; }
+}
+
+.title:hover {
+	animation: move 2s ease-in-out;
+}
+
+
+.bluecircle {
+	width: 325px;
+	height: 325px;
+	background: skyblue;
+	border-radius: 100%;
+	left:90px;
+	top:85px;
+	position: relative;
+}
+	
+
+.line1 {
+	width: 200px;
+	height: 10px;
+	transform: rotate(35deg);
+	background: orangered;
+	position: absolute;
+	left: 100px;
+	top: 175px;
+}
+
+.line2 {
+	width: 200px;
+	height: 10px;
+	transform: rotate(35deg);
+	background: orangered;
+	position: absolute;
+	left: 100px;
+	top: 155px;
+
+}
+
+
+.line3 {
+	width: 200px;
+	height: 10px;
+	transform: rotate(35deg);
+	background: orangered;
+	position: absolute;
+	left: 100px;
+	top: 135px;
+}
+
+.line4 {
+	width: 200px;
+	height: 10px;
+	transform: rotate(145deg);
+	background: orangered;
+	position: absolute;
+	left: -65px;
+	top: 175px;
+}
+
+.line5 {
+	width: 200px;
+	height: 10px;
+	transform: rotate(145deg);
+	background: orangered;
+	position: absolute;
+	left: -65px;
+	top: 155px;
+
+}
+
+.line6 {
+	width: 200px;
+	height: 10px;
+	transform: rotate(145deg);
+	background: orangered;
+	position: absolute;
+	left: -65px;
+	top: 135px;
+}
+
+.orangesquare {
+	width: 225px;
+	height: 225px;
+	background: orange;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	overflow: hidden;
+	
+}
+
+.mouse {
+	width: 325px;
+	height: 325px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+
+
+.orangetriangle {
+	width: 0;
+	height: 0;
+	border-top: 225px solid orangered;
+	border-left: 112px solid transparent;
+	border-right: 112px solid transparent;
+	border-bottom: 112px solid transparent;
+	position: absolute;
+	left: 50%;
+	top: 217.5px;
+	transform: translate(-50%,-50%);
+}
+.greentriangle {
+	width: 0;
+	height: 0;
+	border-top: 40px solid limegreen;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	position: absolute;
+	left: 50%;
+	top: 265px;
+	transform: translate(-50%,-50%);
+	transition: 3s;
+}
+
+.greentriangle:hover {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+
+.greeneye1 {
+	width: 40px;
+	height: 40px;
+	background: limegreen;
+	border-radius: 100%;
+	left: 65%;
+	top: 100px;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	transition:3s;
+}
+	
+.greeneye1:hover {
+	opacity: 0;
+	transition: 0.5s;
+
+}
+
+.greeneye2 {
+	width: 40px;
+	height: 40px;
+	background: limegreen;
+	border-radius: 100%;
+	left: 35%;
+	top: 100px;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	transition: 3s;
+}
+
+.greeneye2:hover {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.greenear1 {
+	width: 80px;
+	height: 80px;
+	background: limegreen;
+	border-radius: 100%;
+	left:270px;
+	top:-20px;
+	position: absolute;
+	transition:3s;
+}
+	
+.greenear1:hover {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.greenear2 {
+	width: 80px;
+	height: 80px;
+	background: limegreen;
+	border-radius: 100%;
+	left:-20px;
+	top:-20px;
+	position: absolute;
+	transition:3s;
+}
+
+.greenear2:hover {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.body {
+	position: absolute;
+	color: black;
+	font-size: 20px;
+	left: 125px;
+	top: 370px;
+}
+		
